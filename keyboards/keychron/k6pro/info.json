@@ -1,0 +1,35 @@
+{
+    "keyboard_name": "Keychron K6 Pro",
+    "manufacturer": "Keychron",
+    "url": "https://github.com/Keychron",
+    "maintainer": "unkown",
+    "processor": "STM32L432",
+    "bootloader": "stm32-dfu",
+    "usb": {
+        "vid": "0x3434"
+    },
+    "eeprom": {
+        "wear_leveling": {
+            "backing_size": 4096
+        }
+    },
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "dip_switch": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "dip_switch": {
+        "pins": ["A8"]
+    },
+    "matrix_pins": {
+        "cols": [  "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN", "NO_PIN","NO_PIN","NO_PIN","NO_PIN" ],
+        "rows": [ "B4", "B3", "A15", "A14", "A13"],
+        "custom": true,
+        "custom_lite": true
+    },
+    "diode_direction": "ROW2COL"
+}
