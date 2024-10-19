@@ -26,10 +26,4 @@
 /* Old default behavior of mod-taps */
 #define HOLD_ON_OTHER_KEY_PRESS
 
-/* HC595 used pins definiton */
-#define HC595_STCP A0
-#define HC595_SHCP A1
-#define HC595_DS C15
-#define SHIFT_COL_START 0
-#define SHIFT_COL_END 14
-
+#define MOUSEKEY_MAX_SPEED 5

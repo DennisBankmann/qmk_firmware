@@ -18,25 +18,16 @@
 #include "atomic_util.h"
 #include <string.h>
 
-#ifndef SHIFT_COL_START
-#    define SHIFT_COL_START 8
-#endif
-#ifndef SHIFT_COL_END
-#    define SHIFT_COL_END 15
-#endif
+#define SHIFT_COL_START 0
+#define SHIFT_COL_END 14
 
-#if defined(SHIFT_COL_START) && defined(SHIFT_COL_END)
-#    if ((SHIFT_COL_END - SHIFT_COL_START + 1) > 16)
-#        define SIZE_T uint32_t
-#        define UNSELECT_ALL_COL 0xFFFFFFFF
-#    elif ((SHIFT_COL_END - SHIFT_COL_START + 1) > 8)
-#        define SIZE_T uint16_t
-#        define UNSELECT_ALL_COL 0xFFFF
-#    else
-#        define SIZE_T uint8_t
-#        define UNSELECT_ALL_COL 0xFF
-#    endif
-#endif
+#define SIZE_T uint16_t
+#define UNSELECT_ALL_COL 0xFFFF
+
+#define HC595_STCP A0
+#define HC595_SHCP A1
+#define HC595_DS C15
+
 
 pin_t row_pins[MATRIX_ROWS] = MATRIX_ROW_PINS;
 pin_t col_pins[MATRIX_COLS] = MATRIX_COL_PINS;

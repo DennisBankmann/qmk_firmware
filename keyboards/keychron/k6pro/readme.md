@@ -15,6 +15,8 @@ Flashing example for this keyboard:
     make keychron/k6pro/ansi/rgb:default:flash
     
 Note: currently, only the ANSI-RGB version is supported, for lack of access to other versions for testing.
+The code is based on the ANSI-RGB version of the Keychron c2_pro which shares the same microcontroller.
+This keyboard has all of its columns on HC595 latch registers and uses MCU pins only for the rows
 
 **Reset Key**: Hold down the key located at *K00*, commonly programmed as *Esc* while plugging in the keyboard.
 **Bootloader Key**: After having reset the keyboard, hold down the key located at *K00*, commonly programmed as *Esc* while plugging in the keyboard.
